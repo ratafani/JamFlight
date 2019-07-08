@@ -9,6 +9,7 @@
 import Foundation
 
 class Dsp{
+    //change freq to Chord
     func freqToChord(f:Double)->chordData{
         let chordArr : [String] = ["A","A#","B","C","C#","D","D#","E","F","F#","G","G#"]
         let f1 = log2(f/440 ) * 12
