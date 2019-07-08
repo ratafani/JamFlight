@@ -14,6 +14,7 @@
 		F686072D22D35E8600B38F8C /* JamFlight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F686072B22D35E8600B38F8C /* JamFlight.xcdatamodeld */; };
 		F686072F22D35E8700B38F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F686072E22D35E8700B38F8C /* Assets.xcassets */; };
 		F686073222D35E8700B38F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F686073022D35E8700B38F8C /* LaunchScreen.storyboard */; };
+		F686073A22D3714900B38F8C /* Dsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686073922D3714900B38F8C /* Dsp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F686072E22D35E8700B38F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F686073122D35E8700B38F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F686073322D35E8700B38F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F686073922D3714900B38F8C /* Dsp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dsp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				E4DA410F0C09CB419BF23E26 /* Pods-JamFlight.debug.xcconfig */,
 				8EBFDBC941917B6AE4234FF7 /* Pods-JamFlight.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 		F686072322D35E8600B38F8C /* JamFlight */ = {
 			isa = PBXGroup;
 			children = (
+				F686073B22D371C400B38F8C /* Scoring */,
 				F686072422D35E8600B38F8C /* AppDelegate.swift */,
 				F686072622D35E8600B38F8C /* ViewController.swift */,
 				F686072822D35E8600B38F8C /* Main.storyboard */,
@@ -90,6 +92,14 @@
 				F686072B22D35E8600B38F8C /* JamFlight.xcdatamodeld */,
 			);
 			path = JamFlight;
+			sourceTree = "<group>";
+		};
+		F686073B22D371C400B38F8C /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				F686073922D3714900B38F8C /* Dsp.swift */,
+			);
+			path = Scoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +202,7 @@
 				F686072D22D35E8600B38F8C /* JamFlight.xcdatamodeld in Sources */,
 				F686072722D35E8600B38F8C /* ViewController.swift in Sources */,
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
+				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
