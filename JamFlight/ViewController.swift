@@ -15,12 +15,18 @@ class ViewController: UIViewController {
     var tracker = AKFrequencyTracker()
     var silence: AKBooster!
     var mText : UILabel!
+    
     var chordArray : [String:Int] = [:]
+    var falseArray : [String:Int] = [:]
     var chordScale : [String] = []
+    var scoreBeat : [Int] = []
     var startBtn : UIButton!
     var stopBtn : UIButton!
+    
     var timer : Timer? = nil
+    var tBeat : Timer? = nil
     var total = 0
+    var scoreTotal = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +40,8 @@ class ViewController: UIViewController {
         mText.textColor = .black
         
         startBtn.center = CGPoint(x: mText.center.x, y: mText.center.y - 80)
-        stopBtn.center = CGPoint(x: mText.center.x, y: startBtn.center.y + 80)
+        stopBtn.center = CGPoint(x: mText.center.x, y: startBtn.center.y + 160)
+        
         startBtn.backgroundColor = .red
         stopBtn.backgroundColor = .red
         view.addSubview(startBtn)
@@ -61,12 +68,15 @@ class ViewController: UIViewController {
         do{
             try AudioKit.stop()
             timer?.invalidate()
+            tBeat?.invalidate()
             timer = nil
+            tBeat = nil
         }catch{
             print(error)
         }
-//        print(chordArray)
-        scoring()
+        print(scoreTotal)
+        scoreTotal = 0
+//        scoring()
     }
     
     func startCounting(){
@@ -79,6 +89,7 @@ class ViewController: UIViewController {
             try AudioKit.start()
             
             timer = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector:  #selector(record), userInfo: nil, repeats: true)
+            tBeat = Timer.scheduledTimer(timeInterval: 0.7143, target:self, selector:  #selector(score), userInfo: nil, repeats: true)
             
         }catch{
             print(error)
@@ -89,21 +100,21 @@ class ViewController: UIViewController {
         tracker = AKFrequencyTracker(mic)
         silence = AKBooster(tracker, gain: 0)
         AKSettings.audioInputEnabled = true
-        
-        chordScale.append("A")
-        chordScale.append("B")
-        chordScale.append("C")
-        chordScale.append("D")
-        chordScale.append("E")
-        chordScale.append("F")
-        chordScale.append("G")
     }
+    
     let dScale : [String] = ["D","E","F#","G","A","B","C#"]
-    let CScale : [String] = ["D","E","F","G","A","B","C"]
+    let cScale : [String] = ["D","E","F","G","A","B","C"]
+    
     @objc func record(){
         let chord = Dsp().freqToChord(f: tracker.frequency)
-//        print(chord)
-        for c in dScale{
+        
+        
+        if (abs(chord.cent) < 10) && (chord.octav>1) && (chord.octav<6) {
+            let cs = "\(chord.chord)\(chord.octav)"
+            chordScale.append(cs)
+        }
+        
+        for c in cScale{
             if chord.chord == c && (abs(chord.cent) < 10) && (chord.octav>1) && (chord.octav<6){
                 total += 1
                 let name = c+"\(chord.octav)"
@@ -117,22 +128,26 @@ class ViewController: UIViewController {
         }
         mText.text = "\(chord)"
     }
-    func scoring(){
-        let variasi = chordArray.count
-        let hT = (65 / 100) * total
-        let lT = (3 / 100) * total
-        var t = 0
-        print(chordArray)
-        for c in chordArray{
-            if !(c.value <= lT) || !(c.value >= hT){
-                t = t + c.value
-                print(c)
-            }
+    
+    @objc func score(){
+        if chordArray.count == 1 && (total-chordScale.count == 0){
+            print(1)
+            scoreTotal += 1
+        }else{
+            let beatnum = chordScale.count
+            let falsenum = beatnum - total
+            let score1 = (beatnum - falsenum) * chordArray.count
+            scoreTotal += score1
+            print(beatnum,total,falsenum,score1)
         }
-//        print(chordArray)
-        let score = variasi * t
-        
-        print(score)
+        print("scale",chordScale)
+        print("weight",chordArray)
+        print()
+        chordScale = []
+        total = 0
+        chordArray = [:]
     }
+    
+    
 }
 
