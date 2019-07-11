@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6BF21B46B046A07C220806A7 /* Pods_JamFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */; };
+		F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640AA4B22D625A600C8FF8D /* CustomColor.swift */; };
+		F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F640AA5222D74F0900C8FF8D /* example.mp3 */; };
 		F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686072422D35E8600B38F8C /* AppDelegate.swift */; };
 		F686072722D35E8600B38F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686072622D35E8600B38F8C /* ViewController.swift */; };
 		F686072A22D35E8600B38F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F686072822D35E8600B38F8C /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JamFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBFDBC941917B6AE4234FF7 /* Pods-JamFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.release.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.release.xcconfig"; sourceTree = "<group>"; };
 		E4DA410F0C09CB419BF23E26 /* Pods-JamFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.debug.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.debug.xcconfig"; sourceTree = "<group>"; };
+		F640AA4B22D625A600C8FF8D /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		F640AA5222D74F0900C8FF8D /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
 		F686072122D35E8600B38F8C /* JamFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JamFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F686072422D35E8600B38F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F686072622D35E8600B38F8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F640AA5422D7707E00C8FF8D /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F640AA4B22D625A600C8FF8D /* CustomColor.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		F640AA5522D770BB00C8FF8D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F686072622D35E8600B38F8C /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F686071822D35E8500B38F8C = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +102,11 @@
 		F686072322D35E8600B38F8C /* JamFlight */ = {
 			isa = PBXGroup;
 			children = (
+				F640AA5222D74F0900C8FF8D /* example.mp3 */,
+				F640AA5522D770BB00C8FF8D /* ViewController */,
 				F686073B22D371C400B38F8C /* Scoring */,
+				F640AA5422D7707E00C8FF8D /* Color */,
 				F686072422D35E8600B38F8C /* AppDelegate.swift */,
-				F686072622D35E8600B38F8C /* ViewController.swift */,
 				F686072822D35E8600B38F8C /* Main.storyboard */,
 				F686072E22D35E8700B38F8C /* Assets.xcassets */,
 				F686073022D35E8700B38F8C /* LaunchScreen.storyboard */,
@@ -162,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F686073222D35E8700B38F8C /* LaunchScreen.storyboard in Resources */,
+				F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */,
 				F686072F22D35E8700B38F8C /* Assets.xcassets in Resources */,
 				F686072A22D35E8600B38F8C /* Main.storyboard in Resources */,
 			);
@@ -202,6 +225,7 @@
 				F686072D22D35E8600B38F8C /* JamFlight.xcdatamodeld in Sources */,
 				F686072722D35E8600B38F8C /* ViewController.swift in Sources */,
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
+				F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */,
 				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
