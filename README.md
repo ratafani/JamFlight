@@ -6,4 +6,6 @@ this project purpose is for learning app for guitarist to having a scoring syste
 Using AudioKit as DSP framework
 
 before using the project, please use
+
+
 pod 'AudioKit/Core'
