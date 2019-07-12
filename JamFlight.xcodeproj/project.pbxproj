@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468B1A6622D8205F0087E176 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B1A6522D8205F0087E176 /* LeaderboardViewController.swift */; };
+		468B1A6822D820800087E176 /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468B1A6722D820800087E176 /* Leaderboard.storyboard */; };
 		6BF21B46B046A07C220806A7 /* Pods_JamFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */; };
 		F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640AA4B22D625A600C8FF8D /* CustomColor.swift */; };
 		F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F640AA5222D74F0900C8FF8D /* example.mp3 */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JamFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		468B1A6522D8205F0087E176 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		468B1A6722D820800087E176 /* Leaderboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
 		8EBFDBC941917B6AE4234FF7 /* Pods-JamFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.release.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.release.xcconfig"; sourceTree = "<group>"; };
 		E4DA410F0C09CB419BF23E26 /* Pods-JamFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.debug.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		F640AA4B22D625A600C8FF8D /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F686072622D35E8600B38F8C /* ViewController.swift */,
+				468B1A6522D8205F0087E176 /* LeaderboardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 				F640AA5422D7707E00C8FF8D /* Color */,
 				F686072422D35E8600B38F8C /* AppDelegate.swift */,
 				F686072822D35E8600B38F8C /* Main.storyboard */,
+				468B1A6722D820800087E176 /* Leaderboard.storyboard */,
 				F686072E22D35E8700B38F8C /* Assets.xcassets */,
 				F686073022D35E8700B38F8C /* LaunchScreen.storyboard */,
 				F686073322D35E8700B38F8C /* Info.plist */,
@@ -183,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468B1A6822D820800087E176 /* Leaderboard.storyboard in Resources */,
 				F686073222D35E8700B38F8C /* LaunchScreen.storyboard in Resources */,
 				F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */,
 				F686072F22D35E8700B38F8C /* Assets.xcassets in Resources */,
@@ -226,6 +233,7 @@
 				F686072722D35E8600B38F8C /* ViewController.swift in Sources */,
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
 				F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */,
+				468B1A6622D8205F0087E176 /* LeaderboardViewController.swift in Sources */,
 				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52RX5R54N7;
+				DEVELOPMENT_TEAM = P2H6AWX9CU;
 				INFOPLIST_FILE = JamFlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52RX5R54N7;
+				DEVELOPMENT_TEAM = P2H6AWX9CU;
 				INFOPLIST_FILE = JamFlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
