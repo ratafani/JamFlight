@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6962654A22D8255700FFF803 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6962654922D8255700FFF803 /* Profile.storyboard */; };
+		6962654C22D8256800FFF803 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962654B22D8256800FFF803 /* ProfileViewController.swift */; };
+		6962655222D82CCB00FFF803 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962655122D82CCB00FFF803 /* CustomButton.swift */; };
+		6962655422D830D400FFF803 /* CustomCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962655322D830D400FFF803 /* CustomCircle.swift */; };
 		6BF21B46B046A07C220806A7 /* Pods_JamFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */; };
 		F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640AA4B22D625A600C8FF8D /* CustomColor.swift */; };
 		F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F640AA5222D74F0900C8FF8D /* example.mp3 */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JamFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6962654922D8255700FFF803 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		6962654B22D8256800FFF803 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6962655122D82CCB00FFF803 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6962655322D830D400FFF803 /* CustomCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircle.swift; sourceTree = "<group>"; };
 		8EBFDBC941917B6AE4234FF7 /* Pods-JamFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.release.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.release.xcconfig"; sourceTree = "<group>"; };
 		E4DA410F0C09CB419BF23E26 /* Pods-JamFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.debug.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		F640AA4B22D625A600C8FF8D /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
@@ -112,6 +120,10 @@
 				F686073022D35E8700B38F8C /* LaunchScreen.storyboard */,
 				F686073322D35E8700B38F8C /* Info.plist */,
 				F686072B22D35E8600B38F8C /* JamFlight.xcdatamodeld */,
+				6962654922D8255700FFF803 /* Profile.storyboard */,
+				6962654B22D8256800FFF803 /* ProfileViewController.swift */,
+				6962655122D82CCB00FFF803 /* CustomButton.swift */,
+				6962655322D830D400FFF803 /* CustomCircle.swift */,
 			);
 			path = JamFlight;
 			sourceTree = "<group>";
@@ -185,6 +197,7 @@
 			files = (
 				F686073222D35E8700B38F8C /* LaunchScreen.storyboard in Resources */,
 				F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */,
+				6962654A22D8255700FFF803 /* Profile.storyboard in Resources */,
 				F686072F22D35E8700B38F8C /* Assets.xcassets in Resources */,
 				F686072A22D35E8600B38F8C /* Main.storyboard in Resources */,
 			);
@@ -222,9 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6962654C22D8256800FFF803 /* ProfileViewController.swift in Sources */,
 				F686072D22D35E8600B38F8C /* JamFlight.xcdatamodeld in Sources */,
+				6962655422D830D400FFF803 /* CustomCircle.swift in Sources */,
 				F686072722D35E8600B38F8C /* ViewController.swift in Sources */,
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
+				6962655222D82CCB00FFF803 /* CustomButton.swift in Sources */,
 				F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */,
 				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
 			);
