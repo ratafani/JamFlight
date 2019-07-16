@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69586C1122DC599F00E02442 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69586C1022DC599F00E02442 /* StatisticViewController.swift */; };
+		69586C1322DC5F3300E02442 /* PopularityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69586C1222DC5F3300E02442 /* PopularityViewController.swift */; };
+		69586C1522DC5F4200E02442 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69586C1422DC5F4200E02442 /* GradesViewController.swift */; };
 		6962654A22D8255700FFF803 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6962654922D8255700FFF803 /* Profile.storyboard */; };
 		6962654C22D8256800FFF803 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962654B22D8256800FFF803 /* ProfileViewController.swift */; };
 		6962655222D82CCB00FFF803 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962655122D82CCB00FFF803 /* CustomButton.swift */; };
 		6962655422D830D400FFF803 /* CustomCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962655322D830D400FFF803 /* CustomCircle.swift */; };
+		699931BC22DD750A009D2806 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699931BB22DD750A009D2806 /* Grade.swift */; };
+		699931BE22DD76F6009D2806 /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699931BD22DD76F6009D2806 /* GradeTableViewCell.swift */; };
 		6BF21B46B046A07C220806A7 /* Pods_JamFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */; };
 		F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640AA4B22D625A600C8FF8D /* CustomColor.swift */; };
 		F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F640AA5222D74F0900C8FF8D /* example.mp3 */; };
@@ -25,10 +30,15 @@
 
 /* Begin PBXFileReference section */
 		3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JamFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69586C1022DC599F00E02442 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		69586C1222DC5F3300E02442 /* PopularityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityViewController.swift; sourceTree = "<group>"; };
+		69586C1422DC5F4200E02442 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		6962654922D8255700FFF803 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		6962654B22D8256800FFF803 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6962655122D82CCB00FFF803 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		6962655322D830D400FFF803 /* CustomCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircle.swift; sourceTree = "<group>"; };
+		699931BB22DD750A009D2806 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		699931BD22DD76F6009D2806 /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
 		8EBFDBC941917B6AE4234FF7 /* Pods-JamFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.release.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.release.xcconfig"; sourceTree = "<group>"; };
 		E4DA410F0C09CB419BF23E26 /* Pods-JamFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.debug.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		F640AA4B22D625A600C8FF8D /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
@@ -85,6 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				F686072622D35E8600B38F8C /* ViewController.swift */,
+				6962654B22D8256800FFF803 /* ProfileViewController.swift */,
+				69586C1022DC599F00E02442 /* StatisticViewController.swift */,
+				69586C1222DC5F3300E02442 /* PopularityViewController.swift */,
+				69586C1422DC5F4200E02442 /* GradesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -121,9 +135,10 @@
 				F686073322D35E8700B38F8C /* Info.plist */,
 				F686072B22D35E8600B38F8C /* JamFlight.xcdatamodeld */,
 				6962654922D8255700FFF803 /* Profile.storyboard */,
-				6962654B22D8256800FFF803 /* ProfileViewController.swift */,
 				6962655122D82CCB00FFF803 /* CustomButton.swift */,
 				6962655322D830D400FFF803 /* CustomCircle.swift */,
+				699931BB22DD750A009D2806 /* Grade.swift */,
+				699931BD22DD76F6009D2806 /* GradeTableViewCell.swift */,
 			);
 			path = JamFlight;
 			sourceTree = "<group>";
@@ -147,6 +162,7 @@
 				F686071D22D35E8600B38F8C /* Sources */,
 				F686071E22D35E8600B38F8C /* Frameworks */,
 				F686071F22D35E8600B38F8C /* Resources */,
+				0B5D36D0AE9AEA08448F3379 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +222,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B5D36D0AE9AEA08448F3379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JamFlight/Pods-JamFlight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JamFlight/Pods-JamFlight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E2D8D8959739CDCE5CBA16DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,9 +278,14 @@
 				6962655422D830D400FFF803 /* CustomCircle.swift in Sources */,
 				F686072722D35E8600B38F8C /* ViewController.swift in Sources */,
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
+				699931BC22DD750A009D2806 /* Grade.swift in Sources */,
 				6962655222D82CCB00FFF803 /* CustomButton.swift in Sources */,
+				69586C1122DC599F00E02442 /* StatisticViewController.swift in Sources */,
 				F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */,
+				699931BE22DD76F6009D2806 /* GradeTableViewCell.swift in Sources */,
 				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
+				69586C1322DC5F3300E02442 /* PopularityViewController.swift in Sources */,
+				69586C1522DC5F4200E02442 /* GradesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
