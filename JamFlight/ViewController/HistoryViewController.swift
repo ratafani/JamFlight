@@ -24,10 +24,13 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         historyTableView.delegate = self
         historyTableView.dataSource = self
+        historyTableView.allowsSelection = false
         
         ColorBackground().gradientBackground(view: view)
         
+        historyTableView.backgroundColor = .clear
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exampleCell.count
@@ -36,6 +39,8 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell") as! HistoryTableViewCell
+        
+        cell.backgroundColor = .clear
         
         cell.playButton.tag = indexPath.row
         

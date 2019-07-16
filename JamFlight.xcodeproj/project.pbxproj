@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		468B1A6A22D827310087E176 /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468B1A6922D827310087E176 /* Leaderboard.storyboard */; };
-		468B1A6C22D8291B0087E176 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B1A6B22D8291B0087E176 /* LeaderboardViewController.swift */; };
-		468B1A6E22D82E140087E176 /* Leaderboard2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B1A6D22D82E140087E176 /* Leaderboard2ViewController.swift */; };
+		468B1A6E22D82E140087E176 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B1A6D22D82E140087E176 /* LeaderboardViewController.swift */; };
 		468B1A7122D82FA70087E176 /* LeaderboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B1A7022D82FA70087E176 /* LeaderboardModel.swift */; };
 		468B1A7322D832DF0087E176 /* leaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B1A7222D832DF0087E176 /* leaderboardTableViewCell.swift */; };
 		468B1A7522DC66430087E176 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468B1A7422DC66430087E176 /* History.storyboard */; };
@@ -31,8 +30,7 @@
 /* Begin PBXFileReference section */
 		3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JamFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		468B1A6922D827310087E176 /* Leaderboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
-		468B1A6B22D8291B0087E176 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
-		468B1A6D22D82E140087E176 /* Leaderboard2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard2ViewController.swift; sourceTree = "<group>"; };
+		468B1A6D22D82E140087E176 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		468B1A7022D82FA70087E176 /* LeaderboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardModel.swift; sourceTree = "<group>"; };
 		468B1A7222D832DF0087E176 /* leaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		468B1A7422DC66430087E176 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -84,6 +82,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		468B1A7C22DD72EA0087E176 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				468B1A7822DC66AE0087E176 /* HistoryTableViewCell.swift */,
+				468B1A7222D832DF0087E176 /* leaderboardTableViewCell.swift */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
 		6E77E22FD00A11BEEB1B33B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +110,10 @@
 		F640AA5522D770BB00C8FF8D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				468B1A7C22DD72EA0087E176 /* ViewCell */,
 				F686072622D35E8600B38F8C /* ViewController.swift */,
-				468B1A6B22D8291B0087E176 /* LeaderboardViewController.swift */,
-				468B1A6D22D82E140087E176 /* Leaderboard2ViewController.swift */,
-				468B1A7222D832DF0087E176 /* leaderboardTableViewCell.swift */,
+				468B1A6D22D82E140087E176 /* LeaderboardViewController.swift */,
 				468B1A7622DC66950087E176 /* HistoryViewController.swift */,
-				468B1A7822DC66AE0087E176 /* HistoryTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -260,12 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F686072D22D35E8600B38F8C /* JamFlight.xcdatamodeld in Sources */,
-				468B1A6E22D82E140087E176 /* Leaderboard2ViewController.swift in Sources */,
+				468B1A6E22D82E140087E176 /* LeaderboardViewController.swift in Sources */,
 				F686072722D35E8600B38F8C /* ViewController.swift in Sources */,
 				468B1A7722DC66950087E176 /* HistoryViewController.swift in Sources */,
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
 				F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */,
-				468B1A6C22D8291B0087E176 /* LeaderboardViewController.swift in Sources */,
 				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
 				468B1A7B22DC68F30087E176 /* HistoryModel.swift in Sources */,
 				468B1A7922DC66AE0087E176 /* HistoryTableViewCell.swift in Sources */,

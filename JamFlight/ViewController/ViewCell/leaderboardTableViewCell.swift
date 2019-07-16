@@ -22,7 +22,10 @@ class leaderboardTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        nameLabel.textColor = .white
+        posLabel.textColor = .white
+        likeLabel.textColor = .white
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -17,7 +17,11 @@ class HistoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        songNameLabel.textColor = .white
+        timeLabel.textColor = .white
+        scoreLabel.textColor = .white
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
