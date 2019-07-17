@@ -12,6 +12,9 @@ class Leaderboard2ViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet weak var leaderboardTableView: UITableView!
     
+    @IBAction func backButtonTapped(_ sender: Any) {
+        print("Back Pressed")
+    }
     var exampleCell:[LeaderboardModel] = [
         LeaderboardModel("Tafa Smith", 1500),
         LeaderboardModel("Faisal", 1200),

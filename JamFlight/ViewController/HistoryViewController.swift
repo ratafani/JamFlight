@@ -12,11 +12,20 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     @IBOutlet weak var historyTableView: UITableView!
     
+    @IBAction func backButtonTapped(_ sender: Any) {
+        
+        print("Back Button Tapped")
+        
+    }
+    
     var exampleCell:[HistoryModel] = [
-        HistoryModel("B-Team", "22:12", 2409),
-        HistoryModel("B-Team", "22:04", 2305),
-        HistoryModel("B-Team", "22:00", 2264),
-        HistoryModel("B-Team", "21:54", 2102)
+        HistoryModel("Sakit Kulit", "22:12", 2409),
+        HistoryModel("Sakit Kulit", "22:04", 2305),
+        HistoryModel("Sakit Kulit", "22:00", 2264),
+        HistoryModel("Sakit Kulit", "22:00", 2264),
+        HistoryModel("Sakit Kulit", "22:00", 2264),
+        HistoryModel("Sakit Kulit", "22:00", 2264),
+        HistoryModel("Sakit Kulit", "21:54", 2102)
     ]
     
     override func viewDidLoad() {
