@@ -19,7 +19,6 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         customImageView(view: profilePicture)
         ColorBackground().gradientBackground(view: view)
-        
         layerBelakang.backgroundColor = UIColor(white: 1, alpha: 0)
     }
     

@@ -26,6 +26,9 @@ class GradesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         Grade("B-Team", 2155, 2255),
         Grade("When you hate someone", 230, 2245),
         Grade("Sakit gigi", 2254, 255),
+        Grade("Sakit gigi", 2254, 255),
+        Grade("Sakit gigi", 2254, 255),
+        Grade("Sakit gigi", 2254, 255)
 
         
     ]
