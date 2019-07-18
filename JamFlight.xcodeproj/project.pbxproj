@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6BF21B46B046A07C220806A7 /* Pods_JamFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */; };
+		AE85D95722DFD14B0035B4D5 /* Boardingscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE85D95622DFD14B0035B4D5 /* Boardingscreen.storyboard */; };
+		AE85D95A22DFD1720035B4D5 /* Song Vlew in Resources */ = {isa = PBXBuildFile; fileRef = AE85D95822DFD1720035B4D5 /* Song Vlew */; };
+		AE85D95B22DFD1720035B4D5 /* Intro View Controller in Resources */ = {isa = PBXBuildFile; fileRef = AE85D95922DFD1720035B4D5 /* Intro View Controller */; };
+		AE85D95D22DFD3430035B4D5 /* Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE85D95C22DFD3430035B4D5 /* Exstension.swift */; };
 		F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640AA4B22D625A600C8FF8D /* CustomColor.swift */; };
 		F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F640AA5222D74F0900C8FF8D /* example.mp3 */; };
 		F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686072422D35E8600B38F8C /* AppDelegate.swift */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		3B30BBCBBA169138E24900AA /* Pods_JamFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JamFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBFDBC941917B6AE4234FF7 /* Pods-JamFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.release.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.release.xcconfig"; sourceTree = "<group>"; };
+		AE85D95622DFD14B0035B4D5 /* Boardingscreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Boardingscreen.storyboard; sourceTree = "<group>"; };
+		AE85D95822DFD1720035B4D5 /* Song Vlew */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Song Vlew"; sourceTree = "<group>"; };
+		AE85D95922DFD1720035B4D5 /* Intro View Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Intro View Controller"; sourceTree = "<group>"; };
+		AE85D95C22DFD3430035B4D5 /* Exstension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exstension.swift; sourceTree = "<group>"; };
 		E4DA410F0C09CB419BF23E26 /* Pods-JamFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JamFlight.debug.xcconfig"; path = "Target Support Files/Pods-JamFlight/Pods-JamFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		F640AA4B22D625A600C8FF8D /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		F640AA5222D74F0900C8FF8D /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 		F640AA5522D770BB00C8FF8D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AE85D95922DFD1720035B4D5 /* Intro View Controller */,
+				AE85D95822DFD1720035B4D5 /* Song Vlew */,
 				F686072622D35E8600B38F8C /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -108,10 +118,12 @@
 				F640AA5422D7707E00C8FF8D /* Color */,
 				F686072422D35E8600B38F8C /* AppDelegate.swift */,
 				F686072822D35E8600B38F8C /* Main.storyboard */,
+				AE85D95622DFD14B0035B4D5 /* Boardingscreen.storyboard */,
 				F686072E22D35E8700B38F8C /* Assets.xcassets */,
 				F686073022D35E8700B38F8C /* LaunchScreen.storyboard */,
 				F686073322D35E8700B38F8C /* Info.plist */,
 				F686072B22D35E8600B38F8C /* JamFlight.xcdatamodeld */,
+				AE85D95C22DFD3430035B4D5 /* Exstension.swift */,
 			);
 			path = JamFlight;
 			sourceTree = "<group>";
@@ -185,7 +197,10 @@
 			files = (
 				F686073222D35E8700B38F8C /* LaunchScreen.storyboard in Resources */,
 				F640AA5322D74F0900C8FF8D /* example.mp3 in Resources */,
+				AE85D95A22DFD1720035B4D5 /* Song Vlew in Resources */,
 				F686072F22D35E8700B38F8C /* Assets.xcassets in Resources */,
+				AE85D95B22DFD1720035B4D5 /* Intro View Controller in Resources */,
+				AE85D95722DFD14B0035B4D5 /* Boardingscreen.storyboard in Resources */,
 				F686072A22D35E8600B38F8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +242,7 @@
 				F686072522D35E8600B38F8C /* AppDelegate.swift in Sources */,
 				F640AA4C22D625A600C8FF8D /* CustomColor.swift in Sources */,
 				F686073A22D3714900B38F8C /* Dsp.swift in Sources */,
+				AE85D95D22DFD3430035B4D5 /* Exstension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
